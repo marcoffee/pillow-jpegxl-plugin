@@ -1,5 +1,5 @@
 [build-system]
-requires = ["maturin>=1.2,<2.0"]
+requires = ["maturin[patchelf]>=1.2,<2.0"]
 build-backend = "maturin"
 
 [project]
@@ -16,4 +16,4 @@ dependencies = [
 ]
 
 [tool.maturin]
-features = ["pyo3/extension-module"]
+features = ["pyo3/extension-module", "dynamic"]
